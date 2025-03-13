@@ -73,10 +73,10 @@ export default {
 
 #### Composition API (Setup)
 
-```tsx
+```vue
+<script setup lang="ts">
 import { createReactInVue } from 'vue-react-bridge'
 import React from 'react'
-import { defineComponent } from 'vue'
 
 // Create a React component
 const ReactComponent = ({ message, count }) => (
@@ -85,14 +85,16 @@ const ReactComponent = ({ message, count }) => (
   </div>
 )
 
-// Use it in Vue 3 setup
-export default defineComponent({
-  setup() {
-    const ReactWrapper = createReactInVue(ReactComponent)
+// Create the wrapper component
+const ReactWrapper = createReactInVue(ReactComponent)
+</script>
 
-    return () => <ReactWrapper message="Hello from React!" count={42} />
-  },
-})
+<template>
+  <ReactWrapper 
+    :message="'Hello from React!'"
+    :count="42"
+  />
+</template>
 ```
 
 ## API
