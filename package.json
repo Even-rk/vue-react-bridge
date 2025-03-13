@@ -1,6 +1,6 @@
 {
   "name": "vue-react-bridge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bridge library for using Vue components in React and React components in Vue",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
