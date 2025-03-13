@@ -23,6 +23,14 @@
   ],
   "author": "Even",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Even-rk/vue-react-bridge"
+  },
+  "bugs": {
+    "url": "https://github.com/Even-rk/vue-react-bridge/issues"
+  },
+  "homepage": "https://github.com/Even-rk/vue-react-bridge",
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0",
